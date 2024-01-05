@@ -1,0 +1,18 @@
+
+#word_container {
+  animation: roll-animation 15.5s infinite;
+}
+
+@keyframes roll-animation {
+  0%    {top: 0}
+  16.13%   {top: 0}
+  19.35%   {top: -2.5rem}
+  35.48%   {top: -2.5rem}
+  38.71%   {top: -5rem}
+  54.84%   {top: -5rem}
+  58.06%   {top: -7.5rem}
+  74.19%   {top: -7.5rem}
+  77.42%   {top: -10rem}
+  93.55%   {top: -10rem}
+  100%  {top: -0rem}
+}
