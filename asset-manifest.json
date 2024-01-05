@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "./static/css/main.24c464a1.css",
+    "main.js": "./static/js/main.1a5349b9.js",
+    "static/media/serviceArea.jpg": "./static/media/serviceArea.af26bef93813e93e4bd5.jpg",
+    "static/media/install.jpg": "./static/media/install.7fcbbe214235be58d1bb.jpg",
+    "static/media/pic_3.jpg": "./static/media/pic_3.81576f26a153d13fce84.jpg",
+    "static/media/pic_1.jpg": "./static/media/pic_1.bb9adda55afa09c1dd6e.jpg",
+    "static/media/pic_4.jpg": "./static/media/pic_4.622506c6f8e46de6203e.jpg",
+    "static/media/pic_2.jpg": "./static/media/pic_2.163a348578e5f0171448.jpg",
+    "static/media/repair.jpg": "./static/media/repair.06a5afc8bf9fd39f8d2e.jpg",
+    "static/media/replace.jpg": "./static/media/replace.0095ea7fe98816b2d06d.jpg",
+    "index.html": "./index.html",
+    "main.24c464a1.css.map": "./static/css/main.24c464a1.css.map",
+    "main.1a5349b9.js.map": "./static/js/main.1a5349b9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.24c464a1.css",
+    "static/js/main.1a5349b9.js"
+  ]
+}
