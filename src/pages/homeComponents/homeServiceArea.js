@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { CiMail } from "react-icons/ci";
 
 // import mapImage from "../../assets/map.png";
-import mapImage from "../../assets/pictures/serviceArea.jpg";
+import mapImage from "../../assets/pictures/service-area.jpg";
 import { ScreenContext } from "../../providers/screenProvider";
 
 const text = "Located in Rockwood, ON, our operational hub serves as a springboard for our widespread reach across Ontario. From bustling city centers to serene rural landscapes, our footprint spans the entirety of Ontario, with our services reaching far and wide, completing diverse jobs across this expansive province.";
