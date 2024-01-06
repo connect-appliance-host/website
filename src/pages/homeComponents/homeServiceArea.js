@@ -2,8 +2,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { CiMail } from "react-icons/ci";
 
-// import mapImage from "../../assets/map.png";
-import mapImage from "../../assets/pictures/service-area.jpg";
+import mapImage from "../../assets/servicearea.jpg";
 import { ScreenContext } from "../../providers/screenProvider";
 
 const text = "Located in Rockwood, ON, our operational hub serves as a springboard for our widespread reach across Ontario. From bustling city centers to serene rural landscapes, our footprint spans the entirety of Ontario, with our services reaching far and wide, completing diverse jobs across this expansive province.";
@@ -50,7 +49,7 @@ function HomeServiceArea(){
         <img src={mapImage} alt="map" className={` ${imageStyles} w-[${width/2}px] h-[${width/2}px] `} />
       </div>
     </>
-  )
+  );
 }
 
 
