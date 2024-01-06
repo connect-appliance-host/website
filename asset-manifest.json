@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "./static/css/main.24c464a1.css",
-    "main.js": "./static/js/main.80928112.js",
-    "static/media/service-area.jpg": "./static/media/service-area.af26bef93813e93e4bd5.jpg",
-    "static/media/install.jpg": "./static/media/install.7fcbbe214235be58d1bb.jpg",
-    "static/media/picthree.jpg": "./static/media/picthree.a90e8e8236461a43f076.jpg",
-    "static/media/pic1.jpg": "./static/media/pic1.24d4ee7fcb8c3ede4b52.jpg",
-    "static/media/picfour.jpg": "./static/media/picfour.fc352c5f2f33a42f0c75.jpg",
-    "static/media/pic2.jpg": "./static/media/pic2.02a0076d758c6b5ddd4c.jpg",
-    "static/media/repair.jpg": "./static/media/repair.06a5afc8bf9fd39f8d2e.jpg",
-    "static/media/pic_2.jpg": "./static/media/pic_2.163a348578e5f0171448.jpg",
-    "static/media/pic_1.jpg": "./static/media/pic_1.bb9adda55afa09c1dd6e.jpg",
-    "static/media/pic_3.jpg": "./static/media/pic_3.81576f26a153d13fce84.jpg",
-    "static/media/pic_4.jpg": "./static/media/pic_4.622506c6f8e46de6203e.jpg",
-    "static/media/replace.jpg": "./static/media/replace.0095ea7fe98816b2d06d.jpg",
-    "index.html": "./index.html",
-    "main.24c464a1.css.map": "./static/css/main.24c464a1.css.map",
-    "main.80928112.js.map": "./static/js/main.80928112.js.map"
+    "main.css": "/website/static/css/main.24c464a1.css",
+    "main.js": "/website/static/js/main.255e5f2e.js",
+    "static/media/servicearea.jpg": "/website/static/media/servicearea.af26bef93813e93e4bd5.jpg",
+    "static/media/install.jpg": "/website/static/media/install.7fcbbe214235be58d1bb.jpg",
+    "static/media/picthree.jpg": "/website/static/media/picthree.a90e8e8236461a43f076.jpg",
+    "static/media/pic1.jpg": "/website/static/media/pic1.24d4ee7fcb8c3ede4b52.jpg",
+    "static/media/picfour.jpg": "/website/static/media/picfour.fc352c5f2f33a42f0c75.jpg",
+    "static/media/pic2.jpg": "/website/static/media/pic2.02a0076d758c6b5ddd4c.jpg",
+    "static/media/repair.jpg": "/website/static/media/repair.06a5afc8bf9fd39f8d2e.jpg",
+    "static/media/pic_2.jpg": "/website/static/media/pic_2.163a348578e5f0171448.jpg",
+    "static/media/pic_1.jpg": "/website/static/media/pic_1.bb9adda55afa09c1dd6e.jpg",
+    "static/media/pic_3.jpg": "/website/static/media/pic_3.81576f26a153d13fce84.jpg",
+    "static/media/pic_4.jpg": "/website/static/media/pic_4.622506c6f8e46de6203e.jpg",
+    "static/media/replace.jpg": "/website/static/media/replace.0095ea7fe98816b2d06d.jpg",
+    "index.html": "/website/index.html",
+    "main.24c464a1.css.map": "/website/static/css/main.24c464a1.css.map",
+    "main.255e5f2e.js.map": "/website/static/js/main.255e5f2e.js.map"
   },
   "entrypoints": [
     "static/css/main.24c464a1.css",
-    "static/js/main.80928112.js"
+    "static/js/main.255e5f2e.js"
   ]
 }
