@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
 
-import homePic from "../../assets/pictures/portfolioPics/project_3/pic_2.jpg"
+import homePic from "../../assets/pictures/portfolio/project_3/pic_2.jpg"
 import "./animateWords.css";
 
 

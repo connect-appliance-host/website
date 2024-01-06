@@ -1,5 +1,5 @@
 
-import { project1Images, project2Images, project3Images } from "../pictures/portfolioPics";
+import { project1Images, project2Images, project3Images } from "../pictures/portfolio";
 
 const portfolioContent = [
   {
