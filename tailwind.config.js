@@ -28,6 +28,8 @@ module.exports = {
         "primaryText": "#000000",
         "secondText": "#4D4D4D",
         "highlightText": "#ffffff",
+        "highlightTextHover": "#ffffff",
+
 
         // special
         "drawerClearBg": "rgba(0,0,0,.7)",

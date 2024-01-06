@@ -20,19 +20,21 @@ import ScrollToTop from '../components/scrollToTop';
 function Main() {
   const {isSmallScreen} = useContext(ScreenContext);
 
-
   return (
     <>
-      {!isSmallScreen ? <LargeNav/> : <SmallNav/>}
-      <ScrollToTop/>
-      <Routes>
-        <Route index element={<Home isSmallScreen={isSmallScreen}/>} />
-        <Route path="services" element={<Services />} />
-        <Route path="portfolio" element={<Portfolio />} />
-        <Route path="testimonials" element={<Testimonials />} />
-        <Route path="contact" element={<ContactUs />} />
-      </Routes>
-      <Footer/>
+      <div className="">
+        {!isSmallScreen ? <LargeNav/> : <SmallNav/>}
+        <ScrollToTop/>
+        <Routes>
+          <Route index element={<Home isSmallScreen={isSmallScreen}/>} />
+          <Route path="services" element={<Services />} />
+          <Route path="portfolio" element={<Portfolio />} />
+          <Route path="testimonials" element={<Testimonials />} />
+          <Route path="contact" element={<ContactUs />} />
+        </Routes>
+        <Footer/>
+
+      </div>
     </>
   )
 }

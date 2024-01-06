@@ -12,6 +12,7 @@ function ScreenProvider({children}){
   const [isLrgSCreen, setIsLrgScreen] = useState(false);
   const [isMegaScreen, setIsMegaScreen] = useState(false);
 
+  const [maxLength, setMaxLength] = useState(0);
   
   // listen for window resizes and set state
   useEffect(() => {
@@ -24,7 +25,20 @@ function ScreenProvider({children}){
       setIsMegaScreen(wid > scrLrg);
     };
 
+    const findMaxLength = () => {
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+
+      if(width < height){
+        setMaxLength(width);
+      } else {
+        setMaxLength(height);
+      }
+    }
+
     window.addEventListener('resize', handleResize);
+    window.addEventListener('resize', findMaxLength);
+    findMaxLength();
     handleResize();
     return () => {
       window.removeEventListener('resize', handleResize);
@@ -36,6 +50,7 @@ function ScreenProvider({children}){
     isMedScreen,
     isLrgSCreen,
     isMegaScreen,
+    maxLength,
   }
 
   return(

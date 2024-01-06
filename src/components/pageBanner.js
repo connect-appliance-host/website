@@ -8,8 +8,8 @@ function PageBanner ({title, description}) {
   const heightAndPadding = isSmallScreen ? ' h-[300px] ' : ' h-[420px] ';
   return (
     <>
-      <div className={"bg-highlight px-12 flex flex-col justify-end pb-10 text-highlightText " + heightAndPadding}>
-        <div className="text-6xl">
+      <div className={"bg-highlight  px-12 flex flex-col justify-end pb-10 text-highlightText " + heightAndPadding}>
+        <div className="text-6xl uppercase">
           {title}
         </div>
         <div className="text-2xl">

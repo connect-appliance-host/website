@@ -1,19 +1,25 @@
-import React from "react";
+import React, { useContext } from "react";
 import { CiMail } from "react-icons/ci";
 import { Link } from "react-router-dom";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
+import { ScreenContext } from "../providers/screenProvider";
 
 function ContactInfo(){
+  const {isSmallScreen} = useContext(ScreenContext);
+  
   const socialLinkStyle = " h-8 w-8 hover:cursor-pointer hover:text-compBg";
+  const padding = isSmallScreen ? " pb-10 " : " pb-16 ";
+  const smallScreenLayout = isSmallScreen ? " flex-col h-[180px] pl-10 " : " h-[50px] ";
+
 
   return(
     <>
       {/* contact info at bottom */}
-      <div className=" w-full pb-16 pt-10 bg-lightBgDark">
-        <div className=" w-[600px] h-[50px] m-auto flex justify-around">
+      <div className={padding + " w-full pt-10 bg-lightBgDark"}>
+        <div className={" max-w-[600px] m-auto flex justify-around" + smallScreenLayout}>
           <div>
-            <div className="text-l">
+            <div className=" text-l ">
               Email
             </div>
             <div className="text-sm">
