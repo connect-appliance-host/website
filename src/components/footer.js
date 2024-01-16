@@ -56,19 +56,21 @@ function ContactInfo(){
 
 function ContactLink(){
 
+  const {isMedScreen} = useContext(ScreenContext);
+
+  const fontSize = isMedScreen ? ' text-xl ' : ' text-3xl ';
+
   return(
     <>
-      <div className="flex flex-col items-center space-y-5 py-10 pb-10">
-        <div className="text-3xl inline-block">
-          We can help build your project!
-        </div>
-        <div>
-          Reach out
+      <div className="flex flex-col items-center space-y-5 py-10">
+        <div className={fontSize + " text-center"}>
+          We can help with your next project!
         </div>
 
         {/* contact button */}
-        <Link className="p-4 bg-highlight w-32 text-highlightText" to="/contact"> 
-          Contact us <CiMail className="inline-block"/>
+        <Link className="p-4 bg-highlight w-40 text-highlightText flex items-center justify-center gap-2" to="/contact"> 
+          <div>Contact us</div> 
+          <CiMail className="inline-block"/>
         </Link>
         
       </div>

@@ -10,7 +10,7 @@ function PictureSlider({imageList}){
   const imageListLength = imageList.length;
 
   // states
-  const {isSmallScreen, isLrgSCreen, isMegaScreen} = useContext(ScreenContext);
+  const {isSmallScreen, isMedScreen, isLrgSCreen, isMegaScreen} = useContext(ScreenContext);
 
   const [index, setIndex] = useState(0);
   const [offset, setOffset] = useState(-100);
@@ -87,7 +87,8 @@ function PictureSlider({imageList}){
   const padderStyles = ` ${sliderHeight} min-w-full flex-none bg-lightBgDark px-2`;
   const sliderStyles = ` ${sliderHeight} relative h-[250px] w-full duration-100 `;
 
-  const arrowStyles = " absolute inset-y-0 h-full text-6xl hover:cursor-pointer";
+  const arrowSize = isMedScreen ? ' text-4xl ' : ' text-5xl ';
+  const arrowStyles = " absolute inset-y-0 h-full hover:cursor-pointer" + arrowSize;
   const rightArrowColor = canMoveRight ? " text-highlight " : " text-black ";
   const leftArrowColor = canMoveLeft ? " text-highlight " : " text-black ";
 
@@ -129,7 +130,6 @@ function ImageForModal({imageSrc}){
 
   return(
     <>
-      {/* <div>asdfasdfasdf</div> */}
       <img className={pictureStyles} src={imageSrc} alt={"gallery"}/>
     </>
   )

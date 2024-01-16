@@ -8,7 +8,7 @@ function Testimonials() {
   return (
     <>
       <PageBanner title={"Brands"} description={"Discover our favorite brands we work with for superior appliance solutions."}/>
-      <div className=" flex max-w-[1024px] grid grid-cols-4 gap-5 ">
+      <div className=" flex flex-wrap justify-center gap-5 max-w-[1024px] m-auto pt-20 ">
         {brandContent.map((brand, index) => {
           
           return(<TestimonialCard brand={brand} key={index}/>);

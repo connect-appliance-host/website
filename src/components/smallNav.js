@@ -10,15 +10,19 @@ import { NavLink } from "react-router-dom";
 
 
 
-function Drawer ({closeDrawer}) {
+function Drawer ({closeDrawer, drawerOpen}) {
+
+  const drawerWidth = drawerOpen ? " w-screen " : ' w-0 ';
 
   // styles
   const menuItemStyle = 'bg-secondaryBg text-secondText text-lg my-3 px-5 py-2' + 
     ' hover:bg-secondBg hover:cursor-pointer';
 
+  
+
   return (
     <>
-      <div className="z-50 fixed h-screen w-screen bg-drawerClearBg">
+      <div className={drawerWidth + " z-50 fixed right-0 h-screen bg-drawerClearBg duration-100 overflow-hidden"}>
         {/* menu */}
         <div className="z-50 absolute right-0 flex flex-col h-full bg-primaryBg w-40 pt-12">
           <NavLink className={menuItemStyle} to='services' onClick={closeDrawer}>Services</NavLink>
@@ -65,7 +69,7 @@ function FloatingLogo() {
 function HamMenuButton ({openDrawer}) {
   return (
     <>
-      <div className="z-50 fixed top-3 right-5 h-6 w-6 hover:cursor-pointer text-primaryText" onClick={openDrawer}>
+      <div className="z-40 fixed top-3 right-5 h-6 w-6 hover:cursor-pointer text-primaryText" onClick={openDrawer}>
         <GiHamburgerMenu className="h-full w-full"/>
       </div>
     </>
@@ -84,7 +88,8 @@ function SmallNav () {
   return(
     <>
       <FloatingLogo/>
-      {drawerOpen ? <Drawer closeDrawer={toggleDrawer}/> : <HamMenuButton openDrawer={toggleDrawer}/>}
+      <Drawer closeDrawer={toggleDrawer} drawerOpen={drawerOpen}/>
+      <HamMenuButton openDrawer={toggleDrawer}/>
     </>
   )
 }

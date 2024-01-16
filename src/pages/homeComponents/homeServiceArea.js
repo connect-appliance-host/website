@@ -16,7 +16,7 @@ function HomeServiceArea(){
   // container
   let containerDimensions = isMegaScreen? ` w-[900px] h-[450px] ` : ` w-[700px] h-[350px] `;
   if(isMedScreen){
-    containerDimensions = " flex-col w-full ";
+    containerDimensions = " flex-col w-full";
   }
 
   // word section

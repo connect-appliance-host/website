@@ -84,7 +84,7 @@ function ContactForm() {
 
   return (
     <>
-      <div className=" w-[650px] m-auto p-10">
+      <div className=" max-w-[650px] m-auto p-10">
         <form onSubmit={handleSubmit} id="email-form">
           <div className=" flex flex-col ">
             <div className=" flex justify-between space-x-4">
