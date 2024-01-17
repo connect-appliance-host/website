@@ -59,7 +59,7 @@ function FloatingLogo() {
     <>
       {/* logo at bottom */}
       <div className="z-50 fixed top-3 left-3 w-12 h-12 flex items-center justify-between text-white">
-      <img src={logoPic} alt="logo" className='w-12 h-12'/>
+      <NavLink to="/"><img src={logoPic} alt="logo" className='w-12 h-12'/></NavLink>
     </div>
     </>
   )
